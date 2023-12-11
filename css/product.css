@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap');
+
+
+:root {
+    --title-color: #626A67;
+    --text-color: #D0D0D0;
+    --dark_button-color: #1d1a1a;
+    --shadow-color: black;
+    --primary-color: #702522;
+    --secondary-color: #f3d081;
+    --card-color: #de2c42;
+}
+
+#products-wrapper {
+    margin-top: 20px;
+}
+
+
+#product-list {
+    padding: 0;
+    margin: 0;
+}
+
+#product-list {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    border-radius: 0 !important;
+}
+
+#product-list .item {
+    height: 460px;
+    width: 32% !important;
+    object-fit: cover;
+    background-color: var(--card-color);
+    overflow: hidden;
+    color: white;
+    margin-top: 20px;
+}
+
+#product-list .item a {
+    text-decoration: none;
+    color: white;
+    height: 100%;
+}
+
+#product-list .item a .card-img {
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 0;
+}
+
+.product-img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+    background-color: var(--secondary-color);
+}
+
+
+#products-wrapper {
+    padding: 10px 20px;
+}
+
+#product-list .item {
+    transition: ease 0.4s;
+}
+
+#product-list .item a:hover {
+    box-shadow: 0 0 10px var(--secondary-color);
+    color: orange;
+}
+
+#product-list .item a .product-img {
+    transition: ease 0.4s;
+}
+
+#product-list .item:hover .product-img {
+    transform: scale(1.2);
+}
+
+.card-body {
+    display: grid;
+    align-content: center;
+}
+
+.card-body>h5,
+.card-body>p {
+    text-align: center;
+}
+
+.card-body h5 {
+    color: var(--money-color);
+    font-weight: bold;
+}
+
+.buyBtn {
+    color: white
+}
+
+#footer {
+    background-color: white;
+    border-top: solid 1px var(--title-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.socail_media {
+    display: flex;
+    justify-content: center;
+}
+
+.media_logo {
+    display: flex;
+}
+
+.media_logo li {
+    list-style: none;
+    margin: 0 25px;
+    font-size: 30px;
+    padding-top: 15px;
+}
+
+.media_logo li a i {
+    color: var(--dark_button-color);
+}
+
+.partner {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+}
+
+.partner h3 {
+    text-align: center;
+}
+
+.partner_img {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+.partner img {
+    margin: 0 20px;
+    width: 100px;
+}
+
+.content {
+    width: 60vw;
+    margin: 0 auto;
+    text-align: justify;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
