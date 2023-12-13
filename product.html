@@ -47,9 +47,14 @@
         </div>
     </div>
     <div class="container">
-
+        <div id="searchWrapper">
+            <input id="searchInput" type="text" placeholder="Tìm kiếm sản phẩm... ">
+            <i id="searchClear" class="fa-solid fa-x"></i>
+            <button id="searchButton"><i class="fa-solid fa-magnifying-glass"></i></button>
+            <div id="suggestionWrapper"></div>
+        </div>
         <div id="products-wrapper">
-            <h2>TẤT CẢ SẢN PHẨM</h2>
+            <h2 class="title">TẤT CẢ SẢN PHẨM</h2>
 
             <ul id="product-list" class="row-cols-6">
 
@@ -102,6 +107,7 @@
     </div>
     <div class="listCart" hidden></div>
     <script src="./js/order.js"></script>
+    <script src="./js/search.js"></script>
 </body>
 
 </html>

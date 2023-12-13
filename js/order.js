@@ -125,11 +125,32 @@ function payment() {
 }
 // Bấm nút thanh toán
 let orderButton = document.querySelector(".buttonCheckout");
-let nameInput = document.getElementsByName("name");
-let sdtInput = document.getElementsByName("phone");
-let diachiInput = document.getElementsByName("address");
+let nameInput = document.getElementById("name");
+let phoneInput = document.getElementById("phone");
+let addressInput = document.getElementById("address");
+let selectElement = document.getElementById("country");
 orderButton.addEventListener("click", function () {
-  if (nameInput.innerText === "") {
-    alert("Nhap ho ten");
+  // Kiểm tra rỗng
+  if (nameInput.value === "") {
+    alert("Nhập vào họ tên người mua");
+    return false;
   }
+  if (phoneInput.value === "") {
+    alert("Nhập vào số điện thoại người mua");
+    return false;
+  }
+  if (addressInput.value === "") {
+    alert("Nhập vào địa chỉ người mua");
+    return false;
+  }
+  if (selectElement.selectedIndex === 0) {
+    alert("Hãy chọn thành phố");
+    return false;
+  }
+  //Kiểm tra tính họp lệ
+  if (phoneInput.value.length != 10) {
+    alert("Hãy nhập đúng số điện thoại");
+    return false;
+  }
+  return true;
 });

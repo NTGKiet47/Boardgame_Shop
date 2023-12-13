@@ -8,7 +8,99 @@
     --card-color: #de2c42;
 }
 
+/* Thanh timf kieem */
+#searchWrapper {
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 60%;
+    margin: 100px auto 0 auto;
+}
 
+#searchInput {
+    height: 100%;
+    width: 100%;
+    outline: none;
+    padding-left: 12px;
+    border: solid 2px var(--card-color);
+    border-bottom-left-radius: 8px;
+    border-top-left-radius: 8px;
+    border-right: none;
+    font-size: 20px;
+}
+
+#searchButton {
+    width: 40px;
+    border: solid 2px var(--card-color);
+    border-bottom-right-radius: 8px;
+    border-top-right-radius: 8px;
+    font-size: 20px;
+    transition: ease 0.3s;
+    background-color: var(--card-color);
+    color: white;
+}
+
+#searchClear {
+    position: absolute;
+    right: 50px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: default;
+    font-size: 20px;
+}
+
+#searchClear:active {
+    font-size: 16px;
+}
+
+#searchButton:hover {
+    background-color: white;
+    color: black;
+}
+
+#searchButton:active {
+    background-color: var(--card-color);
+}
+
+#suggestionWrapper {
+    position: absolute;
+    width: 100%;
+    max-height: 300px;
+    top: 105%;
+    z-index: 2;
+    border-radius: 4px;
+    transition: ease 0.3s;
+}
+
+
+#suggestionWrapper .suggest:first-child {
+    border-top-right-radius: 4px;
+    border-top-left-radius: 4px;
+}
+
+#suggestionWrapper .suggest:last-child {
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+
+#suggestionWrapper .suggest {
+    color: black;
+    padding-left: 12px;
+    cursor: pointer;
+    height: 30px;
+    display: grid;
+    align-content: center;
+    background-color: #eeeeee;
+    border-bottom: solid 2px var(--title-color);
+    transition: ease 0.3s;
+}
+
+#suggestionWrapper .suggest:hover {
+    background-color: rgb(209, 209, 209);
+}
+
+/* --------------- */
 #footer {
     background-color: white;
     border-top: solid 1px var(--title-color);

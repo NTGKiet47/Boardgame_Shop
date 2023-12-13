@@ -67,8 +67,11 @@
     white-space: normal;
 }
 
-.contentWrapper .content .name,
-.contentWrapper .content .price {}
+.contentWrapper .content .name {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
 
 .quantity {
     display: flex;
@@ -125,18 +128,15 @@
 .bill {
     display: flex;
     flex-direction: column;
-    height: 700px;
+    height: 520px;
     width: 80%;
     margin-top: 10px;
     border-radius: 16px;
     background-color: var(--card-color);
     right: 0;
     padding: 0 10px;
-}
-
-.bill {
     color: white;
-    padding: 40px;
+    padding: 10px 40px;
 }
 
 .bill h1 {
@@ -149,7 +149,7 @@
 }
 
 .bill .group {
-    margin: 20px 0;
+    margin: 4px 0;
 }
 
 .bill .group label {
@@ -166,6 +166,7 @@
 .bill .group select {
     width: 160px;
     border-radius: 8px;
+    margin: 4px 0;
 }
 
 .buttonCheckout {

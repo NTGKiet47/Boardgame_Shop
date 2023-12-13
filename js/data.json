@@ -3,63 +3,72 @@
     "id": 1,
     "img": "../assets/images/Artbook.png",
     "price": "120.000",
-    "name": "Dish name",
+    "name": "Artbook",
+    "searchName": "Artbook",
     "rank": 1
   },
   {
     "id": 2,
     "img": "../assets/images/binhgiunhiet.png",
     "price": "120.000",
-    "name": "Dish name",
+    "name": "Bình giữ nhiệt - 500ml",
+    "searchName": "Binh giu nhiet - 500ml",
     "rank": 1
   },
   {
     "id": 3,
     "img": "../assets/images/ly.png",
     "price": "120.000",
-    "name": "Dish name",
+    "name": "Ly đựng nước cầm tay",
+    "searchName": "Ly dung nuoc cam tay",
     "rank": 1
   },
   {
     "id": 4,
     "img": "../assets/images/botaiuong.png",
     "price": "120.000",
-    "name": "Dish name",
+    "name": "Bộ bài Làng Tai Ươn",
+    "searchName": "Bo bai lang tai uon",
     "rank": 0
   },
   {
     "id": 5,
     "img": "../assets/images/hopcombo.png",
     "price": "120.000",
-    "name": "Dish name",
+    "name": "Hộp combo KỲ QUÁI NGŨ HÀNH 20 món",
+    "searchName": "hop bombo ky quai ngu hanh",
     "rank": 1
   },
   {
     "id": 6,
     "img": "../assets/images/thumbnail (1).png",
     "price": "120.000",
-    "name": "Dish name",
+    "name": "Bộ sticker 01",
+    "searchName": "bo sticker 01",
     "rank": 0
   },
   {
     "id": 7,
     "img": "../assets/images/thumbnail (2).png",
     "price": "120.000",
-    "name": "Dish name",
+    "name": "Bộ sticker 02",
+    "searchName": "bo sticker 02",
     "rank": 0
   },
   {
     "id": 8,
     "img": "../assets/images/thumbnail (3).png",
     "price": "120.000",
-    "name": "Dish name",
+    "name": "Túi giấy đựng quà chống thấm nước",
+    "searchName": "tui giay dung qua chong tham nuoc",
     "rank": 0
   },
   {
     "id": 9,
     "img": "../assets/images/thumbnail (4).png",
     "price": "120.000",
-    "name": "Dish name",
+    "name": "Móc chìa khóa",
+    "searchName": "moa chi khoa",
     "rank": 0
   }
 ]

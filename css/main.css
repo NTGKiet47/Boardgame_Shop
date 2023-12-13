@@ -86,6 +86,10 @@
     position: relative;
 }
 
+#actions .item:hover {
+    transform: scale(1.1);
+}
+
 #actions .item i {
     color: var(--title-color) !important;
 }
@@ -200,7 +204,7 @@
 
 /* --------------- the san pham---------------- */
 #products-wrapper {
-    margin-top: 20px;
+    margin-top: 24px;
 }
 
 
@@ -284,6 +288,12 @@
     text-align: center;
 }
 
+.card-body .card-text {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
 .card-body h5 {
     color: var(--money-color);
     font-weight: bold;
@@ -301,6 +311,10 @@
 }
 
 .buyBtn:hover {
+    transform: scale(1.05);
+}
+
+.buyBtn:active {
     transform: scale(0.95);
 }
 
