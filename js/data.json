@@ -1,54 +1,63 @@
 [
   {
-    "img": "./assets/images/Artbook.png",
+    "id": 1,
+    "img": "../assets/images/Artbook.png",
     "price": "120.000",
     "name": "Dish name",
     "rank": 1
   },
   {
-    "img": "./assets/images/binhgiunhiet.png",
+    "id": 2,
+    "img": "../assets/images/binhgiunhiet.png",
     "price": "120.000",
     "name": "Dish name",
     "rank": 1
   },
   {
-    "img": "./assets/images/ly.png",
+    "id": 3,
+    "img": "../assets/images/ly.png",
     "price": "120.000",
     "name": "Dish name",
     "rank": 1
   },
   {
-    "img": "./assets/images/botaiuong.png",
+    "id": 4,
+    "img": "../assets/images/botaiuong.png",
     "price": "120.000",
     "name": "Dish name",
     "rank": 0
   },
   {
-    "img": "./assets/images/hopcombo.png",
+    "id": 5,
+    "img": "../assets/images/hopcombo.png",
     "price": "120.000",
     "name": "Dish name",
     "rank": 1
   },
   {
-    "img": "./assets/images/thumbnail (1).png",
+    "id": 6,
+    "img": "../assets/images/thumbnail (1).png",
     "price": "120.000",
     "name": "Dish name",
     "rank": 0
   },
   {
-    "img": "./assets/images/thumbnail (2).png",
+    "id": 7,
+    "img": "../assets/images/thumbnail (2).png",
     "price": "120.000",
     "name": "Dish name",
     "rank": 0
   },
   {
-    "img": "./assets/images/thumbnail (3).png",
+    "id": 8,
+    "img": "../assets/images/thumbnail (3).png",
     "price": "120.000",
     "name": "Dish name",
     "rank": 0
   },
   {
-    "img": "./assets/images/thumbnail (4).png",
+    "id": 9,
+    "img": "../assets/images/thumbnail (4).png",
     "price": "120.000",
     "name": "Dish name",
     "rank": 0

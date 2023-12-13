@@ -1,0 +1,187 @@
+/* Add font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700&display=swap');
+
+:root {
+    --title-color: #626A67;
+    --text-color: #D0D0D0;
+    --dark_button-color: #1d1a1a;
+    --shadow-color: black;
+    --primary-color: #702522;
+    --secondary-color: #f3d081;
+    --card-color: #de2c42;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+#paymentAndCart {
+    display: flex;
+    position: relative;
+}
+
+.listCart {
+    margin-right: 8px;
+    padding: 0 10px;
+}
+
+.listCart .item {
+    width: 100%;
+    height: 160px;
+    display: flex;
+    box-shadow: 2px 1px 8px var(--shadow-color);
+    border-radius: 16px;
+    overflow: hidden;
+    padding: 6px;
+    margin: 12px 0;
+    transition: scale 0.4s ease;
+}
+
+.listCart .item:hover {
+    transform: scale(1.02);
+}
+
+.listCart .item img {
+    height: 100%;
+    width: 50% !important;
+    object-fit: cover;
+    margin-right: 10px;
+    border-radius: 16px;
+    background-color: var(--secondary-color);
+}
+
+.contentWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    font-size: 24px;
+}
+
+.contentWrapper .content {
+    width: 100%;
+    color: var(--primary-color);
+    white-space: normal;
+}
+
+.contentWrapper .content .name,
+.contentWrapper .content .price {}
+
+.quantity {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+
+.quantity button {
+    width: 30px;
+    height: 30px;
+    border: none;
+    background-color: var(--card-color);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: scale 0.4s;
+}
+
+.quantity button:hover {
+    transform: scale(1.05);
+}
+
+.quantity button:active {
+    transform: scale(0.95);
+}
+
+.contentWrapper>button {
+    background-color: var(--secondary-color);
+    width: 200px;
+    border-radius: 4px;
+    height: 42px !important;
+    font-size: 20px;
+    border: none;
+    color: var(--primary-color) !important;
+    font-weight: bold;
+    margin: auto;
+    transition: scale 0.4s;
+}
+
+.contentWrapper>button:hover {
+    transform: scale(1.05);
+}
+
+.contentWrapper>button:active {
+    transform: scale(0.95);
+}
+
+.box {
+    position: relative !important;
+}
+
+.bill {
+    display: flex;
+    flex-direction: column;
+    height: 700px;
+    width: 80%;
+    margin-top: 10px;
+    border-radius: 16px;
+    background-color: var(--card-color);
+    right: 0;
+    padding: 0 10px;
+}
+
+.bill {
+    color: white;
+    padding: 40px;
+}
+
+.bill h1 {
+    color: var(--secondary-color);
+    text-align: center;
+}
+
+.bill {
+    font-size: 26px;
+}
+
+.bill .group {
+    margin: 20px 0;
+}
+
+.bill .group label {
+    width: 160px;
+}
+
+.bill .group input {
+    width: 100%;
+    outline: none;
+    padding-left: 10px;
+    border-radius: 8px;
+}
+
+.bill .group select {
+    width: 160px;
+    border-radius: 8px;
+}
+
+.buttonCheckout {
+    width: 200px;
+    transition: scale 0.4s;
+    margin: 0 auto;
+    margin-top: 20px;
+    border-radius: 8px;
+    border: none;
+    background-color: var(--secondary-color);
+}
+
+.buttonCheckout:hover {
+    transform: scale(1.05);
+}
+
+.buttonCheckout:active {
+    transform: scale(0.95);
+}

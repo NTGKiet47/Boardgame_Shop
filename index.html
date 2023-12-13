@@ -5,12 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- webicon -->
-    <link rel="icon" href="assets/images/logo.jpg">
+    <link rel="icon" href="./assets/images/logo.jpg">
     <title>TaChoi</title>
     <!-- css -->
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <!-- <link rel="stylesheet" href="css/cart.css"> -->
     <!-- icon - fontawesome -->
-    <link rel="stylesheet" href="/assets/fontawesome-free-6.4.2-web/css/all.css">
+    <link rel="stylesheet" href="/./assets/fontawesome-free-6.4.2-web/css/all.css">
     <!-- bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
@@ -26,12 +27,12 @@
 
 <body>
     <div id="header">
-        <a href="index.html">
-            <img id="logo" src="assets/images/logo.png" alt="">
+        <a href="#top">
+            <img id="logo" src="./assets/images/logo.png" alt="">
         </a>
         <div id="menu">
             <div class="item"><a href="index.html">Trang chủ</a></div>
-            <div class="item"><a href="product.html" target="_blank">Sản phẩm</a></div>
+            <div class="item"><a href="product.html" target="">Sản phẩm</a></div>
             <div class="item"><a href="intro.html">Giới thiệu</a></div>
             <div class="item"><a href="#">Liên hệ</a></div>
         </div>
@@ -39,22 +40,23 @@
             <div class="item"><a href="#">
                     <i class="fa-regular fa-user"></i>
                 </a></div>
-            <div class="item"><a href="#">
-                    <i class="fa-solid fa-cart-shopping"></i>
+            <div class="item"><a href="cart.html">
+                    <i class="fa-solid fa-cart-shopping iconCart"></i>
+                    <div class="totalQuantity">0</div>
                 </a></div>
         </div>
     </div>
     <div class="container">
         <div id="banner">
-            <img id="bannerImg" src="assets/images/banner.png" alt="">
+            <img id="bannerImg" src="./assets/images/banner.png" alt="">
         </div>
         <h2 class="mainTitle">TẠI SAO LẠI CHỌN TACHOI</h2>
         <div id="intro">
             <div class="box-left">
-                <img src="assets/images/sticker.png" alt="">
+                <img src="./assets/images/sticker.png" alt="">
             </div>
             <div class="box-right">
-                <img src="assets/images/logo (1).jpg" alt="">
+                <img src="./assets/images/logo (1).jpg" alt="">
                 <div class="reasons">
                     <span>LÝ DO CHỌN TACHOI 1</span>
                     <span>LÝ DO CHỌN TACHOI 2</span>
@@ -66,38 +68,34 @@
         </div>
         <div id="products-wrapper">
             <h2 class="title">SẢN PHẨM CỦA TACHOI</h2>
-            <div class="iconCart">
-                <i class="fa-solid fa-cart-shopping">|</i>
-                <div class="totalQuantity">0</div>
-            </div>
             <ul id="product-list">
 
             </ul>
             <div id="viewAll">
-                <a href="product.html">VIEW ALL</a>
+                <a href="product.html" target="">VIEW ALL</a>
             </div>
             <div id="carouselExampleFade" class="carousel slide carousel-fade">
                 <h2 class="title">KHUYẾN MÃI</h2>
                 <div class="carousel-inner">
                     <div class="carousel-item active floating">
-                        <a href="#" target="_blank">
+                        <a href="#" target="">
                             <div class="box-left">
                                 <span>SALE UP TO </span>
                                 <span>30%</span>
                             </div>
                             <div class="box-right">
-                                <img id="saleoffImg" class="saleoffImg" src="assets/images/binhgiunhiet.png" alt="">
+                                <img id="saleoffImg" class="saleoffImg" src="./assets/images/binhgiunhiet.png" alt="">
                             </div>
                         </a>
                     </div>
                     <div class="carousel-item floating">
-                        <a href="#" target="_blank">
+                        <a href="#" target="">
                             <div class="box-left">
                                 <span>SALE UP TO </span>
                                 <span>15%</span>
                             </div>
                             <div class="box-right">
-                                <img id="saleoffImg" class="saleoffImg" src="assets/images/bokiquaicovat.png" alt="">
+                                <img id="saleoffImg" class="saleoffImg" src="./assets/images/bokiquaicovat.png" alt="">
                             </div>
                         </a>
                     </div>
@@ -130,32 +128,16 @@
                     </div>
                     <div class="box-right">
                         <div class="rightImage-wrapper">
-                            <img src="assets/images/thumbnail.png" alt="" class="right-img">
+                            <img src="./assets/images/thumbnail.png" alt="" class="right-img">
                         </div>
                         <div class="rightImage-wrapper">
-                            <img src="assets/images/thumbnail (1).png" alt="" class="right-img">
+                            <img src="./assets/images/thumbnail (1).png" alt="" class="right-img">
                         </div>
                         <div class="rightImage-wrapper">
-                            <img src="assets/images/thumbnail (2).png" alt="" class="right-img">
+                            <img src="./assets/images/thumbnail (2).png" alt="" class="right-img">
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </div>
-    <div class="cart">
-        <h2>
-            Giỏ hàng
-        </h2>
-        <div class="listCart">
-
-        </div>
-        <div class="buttons">
-            <div class="close">
-                Đóng
-            </div>
-            <div class="checkout">
-                <a href="cart.html">Giỏ hàng</a>
             </div>
         </div>
     </div>
@@ -192,8 +174,8 @@
         <div class="partner">
             <h3>Media Partners</h3>
             <div class="partner_img">
-                <img src="assets/images/partner1.jpg" alt="">
-                <img src="assets/images/partner2.jpg" alt="">
+                <img src="./assets/images/partner1.jpg" alt="">
+                <img src="./assets/images/partner2.jpg" alt="">
             </div>
         </div>
         <div class="content">
@@ -203,6 +185,8 @@
                 Forestry</p>
         </div>
     </div>
+    <div class="listCart" hidden></div>
+    <script src="./js/order.js"></script>
 
 </body>
 
