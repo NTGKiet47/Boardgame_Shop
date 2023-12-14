@@ -213,10 +213,11 @@
     margin: 0;
 }
 
+/* mark */
 #product-list {
     display: flex;
     list-style: none;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     align-items: center;
     flex-wrap: wrap;
 }
@@ -224,6 +225,7 @@
 .card {
     border-radius: 0 !important;
 }
+
 
 #product-list .item {
     height: 450px;
@@ -233,6 +235,7 @@
     overflow: hidden;
     color: white;
     margin-top: 20px;
+    margin: 12px;
 }
 
 
