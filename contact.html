@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- webicon -->
     <link rel="icon" href="./assets/images/logo rut gọn.png">
-    <title>Sản phẩm - Kết quả tìm kiếm</title>
+    <title>Liên hệ</title>
     <!-- css -->
     <link rel="stylesheet" href="./css/main.css">
-    <link rel="stylesheet" href="./css/product.css">
+    <link rel="stylesheet" href="./css/contact.css">
     <!-- icon - fontawesome -->
     <link rel="stylesheet" href="/./assets/fontawesome-free-6.4.2-web/css/all.css">
     <!-- bootstrap -->
@@ -21,8 +21,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
-    <!-- load products -->
-    <script src="./js/searchResult.js"></script>
 </head>
 
 <body>
@@ -34,7 +32,7 @@
             <div class="item"><a href="index.html">Trang chủ</a></div>
             <div class="item"><a href="product.html">Sản phẩm</a></div>
             <div class="item"><a href="intro.html">Giới thiệu</a></div>
-            <div class="item"><a href="./contact.html">Liên hệ</a></div>
+            <div class="item"><a href="contact.html">Liên hệ</a></div>
         </div>
         <div id="actions">
             <div class="item"><a href="#">
@@ -47,18 +45,39 @@
         </div>
     </div>
     <div class="container">
-        <div id="searchWrapper">
-            <input id="searchInput" type="text" placeholder="Tìm kiếm sản phẩm... ">
-            <i id="searchClear" class="fa-solid fa-x"></i>
-            <button id="searchButton"><i class="fa-solid fa-magnifying-glass"></i></button>
-            <div id="suggestionWrapper"></div>
-        </div>
-        <div id="products-wrapper">
-            <h2 class="title">KẾT QUẢ TÌM KIẾM</h2>
-
-            <ul id="product-list" class="searchResultsContainer" class="row">
-
-            </ul>
+        <h1>Liên hệ chúng tôi
+        </h1>
+        <div class="contentWrapper">
+            <div class="box_left">
+                <div class="content" id="mapContent">
+                    <i class="content_icon fa-solid fa-map-location"></i>
+                    <span>Trường cao đẳng FPT Polytechnic</span>
+                    <iframe id="map" class="hidden"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3796.393238294435!2d105.75822740000001!3d9.982081500000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31a08906415c355f%3A0x416815a99ebd841e!2zVHLGsOG7nW5nIENhbyDEkeG6s25nIEZQVCBQb2x5dGVjaG5pYw!5e1!3m2!1svi!2s!4v1702653848519!5m2!1svi!2s"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div id="mapClear" class="hidden">Đóng</div>
+                <div class="content">
+                    <i class="content_icon fa-solid fa-square-phone"></i>
+                    <span>0377.103.568</span>
+                </div>
+                <div class="content">
+                    <i class="content_icon fa-solid fa-envelope"></i>
+                    <span>abc@gmail.com</span>
+                </div>
+            </div>
+            <div class="box_right">
+                <form action="contact.php" id="contactForm" onsubmit="checkContact()">
+                    <label for="nameInput">Tên của bạn</label>
+                    <input type="text" id="nameInput">
+                    <label for="emailInput">Email liên hệ</label>
+                    <input type="text" id="emailInput">
+                    <label for="messInput">Ý kiến của bạn</label>
+                    <input type="tẽ" id="messInput">
+                    <button type="submit">Gửi</button>
+                </form>
+            </div>
         </div>
     </div>
     <div id="footer">
@@ -105,7 +124,23 @@
     </div>
     <div class="listCart" hidden></div>
     <script src="./js/order.js"></script>
-    <script src="./js/search.js"></script>
+    <script>
+        let mapContent = document.getElementById("mapContent");
+        let map = document.getElementById("map");
+        let mapClear = document.getElementById('mapClear');
+        mapContent.onclick = () => {
+            map.classList.remove('hidden');
+            mapClear.classList.remove('hidden');
+            map.classList.add('show');
+            mapClear.classList.add('show');
+        }
+        mapClear.onclick = () => {
+            map.classList.remove('show');
+            mapClear.classList.remove('show');
+            map.classList.add('hidden');
+            mapClear.classList.add('hidden');
+        }
+    </script>
 </body>
 
 </html>

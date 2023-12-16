@@ -53,6 +53,10 @@
     background-color: var(--secondary-color);
 }
 
+.container {
+    min-height: 940px;
+}
+
 .contentWrapper {
     display: flex;
     flex-direction: column;
@@ -134,7 +138,6 @@
     border-radius: 16px;
     background-color: var(--card-color);
     right: 0;
-    padding: 0 10px;
     color: white;
     padding: 10px 40px;
 }

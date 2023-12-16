@@ -15,7 +15,7 @@ function loadData() {
       let newProduct = document.createElement("div");
       newProduct.classList.add("card", "item");
       newProduct.innerHTML = `
-                      <a href="#">
+                      <a href="#" onclick="saveCardDetail(${product.id})">
                         <p class="card-id" hidden>${product.id}</p>
                         <div class="card-img">
                             <img class="product-img" src="${product.img}" alt="...">

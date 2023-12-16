@@ -17,7 +17,7 @@ function load_mostBuy() {
         let newProduct = document.createElement("div");
         newProduct.classList.add("card", "item");
         newProduct.innerHTML = `
-                      <a href="#">
+                      <a href="#" onclick="saveCardDetail(${product.id})">
                         <p class="card-id" hidden>${product.id}</p>
                         <div class="card-img">
                             <img class="product-img" src="${product.img}" alt="...">
@@ -27,7 +27,7 @@ function load_mostBuy() {
                             <p class="card-text">${product.name}</p>
                             </div>
                       </a>
-                                            <button class="buyBtn button" onclick="addCart(${product.id})">Thêm vào giỏ hàng</button>`;
+                      <button class="buyBtn button" onclick="addCart(${product.id})">Thêm vào giỏ hàng</button>`;
 
         product_list.appendChild(newProduct);
       }

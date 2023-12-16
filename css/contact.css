@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700&display=swap');
+
+:root {
+    --title-color: #626A67;
+    --text-color: #D0D0D0;
+    --dark_button-color: #1d1a1a;
+    --shadow-color: black;
+    --primary-color: #702522;
+    --secondary-color: #f3d081;
+    --card-color: #de2c42;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    min-height: 520;
+
+}
+
+.contentWrapper {
+    display: flex;
+    height: 480px;
+    width: 100%;
+}
+
+.contentWrapper .box_left,
+.contentWrapper .box_right {
+    width: 50%;
+}
+
+.contentWrapper .box_left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contentWrapper .box_left .content {
+    width: 100%;
+    padding-left: 100px;
+    cursor: pointer;
+    line-height: 70px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.contentWrapper .box_left .content:hover .content_icon {
+    transform: scale(1.5);
+}
+
+.content_icon {
+    font-size: 40px;
+    color: var(--card-color);
+    width: 100px;
+    position: absolute;
+}
+
+.contentWrapper .box_left .content span {
+    font-size: 26px;
+    margin-left: 100px;
+}
+
+/* form */
+.contentWrapper .box_right {
+    display: flex;
+    align-items: center;
+}
+
+#contactForm {
+    width: 100%;
+    background-color: var(--card-color);
+    border-radius: 16px;
+    margin-right: 100px;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 40px 16px;
+}
+
+#contactForm label {
+    font-size: 26px;
+    color: white;
+}
+
+#contactForm input {
+    outline: none;
+    padding-left: 8px;
+    height: 46px;
+    border-radius: 10px;
+    border-color: var(--secondary-color);
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+#contactForm button {
+    width: 140px;
+    margin: 0 auto;
+    margin-top: 10px;
+    border-radius: 10px;
+    height: 40px;
+    font-size: 24px;
+    background-color: var(--secondary-color);
+    border: none;
+}
+
+/* map */
+/* 450px */
+#map {
+    position: absolute;
+    top: -170%;
+    left: 40px;
+    z-index: 2;
+    width: 80vw;
+    border-radius: 10px;
+    box-shadow: 0 0 10px var(--shadow-color);
+    transition: ease-in-out 0.4s;
+}
+
+.show {
+    display: block;
+}
+
+.hidden {
+    display: none;
+}
+
+/* 40 */
+
+#mapClear {
+    color: var(--secondary-color);
+    position: absolute;
+    top: 200px;
+    right: 160px;
+    z-index: 3;
+    font-weight: 600;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+#mapClear:hover {
+    color: var(--card-color);
+}

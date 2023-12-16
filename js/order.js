@@ -37,7 +37,7 @@ function addCart(idProduct) {
     "; expires=Thu, 31 Dec 2025 23:59:59 UTC; path=/;";
   addCartToHTML();
 }
-// thêm thẻ vào trang giỏ hàng (thanh toán) --> Chưa sửa
+// thêm thẻ vào trang giỏ hàng (thanh toán)
 addCartToHTML();
 function addCartToHTML() {
   // clear data default

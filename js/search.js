@@ -67,3 +67,24 @@ searchButton.onclick = function () {
   console.log(searchResult);
   window.location.href = "searchResult.html";
 };
+document.addEventListener("keypress", (event) => {
+  if (searchInput.value != "") {
+    if (event.key === "Enter") {
+      let searchResult = [];
+      let searchValue = searchInput.value;
+      productsList.forEach((product) => {
+        if (
+          product.searchName
+            .toLowerCase()
+            .includes(searchValue.toLowerCase()) ||
+          product.name.toLowerCase().includes(searchValue.toLowerCase())
+        ) {
+          searchResult.push(product);
+        }
+      });
+      sessionStorage.setItem("searchResult", JSON.stringify(searchResult));
+      console.log(searchResult);
+      window.location.href = "searchResult.html";
+    }
+  }
+});
